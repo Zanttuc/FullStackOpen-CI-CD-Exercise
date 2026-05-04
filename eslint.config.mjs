@@ -5,7 +5,7 @@ import stylisticJs from "@stylistic/eslint-plugin";
 export default [
   js.configs.recommended,
   {
-    ignores: ["dist/**", "frontend/dist/**", "node_modules/**"],
+    ignores: ["dist/**", "frontend/**", "node_modules/**"],
   },
   {
     files: ["**/*.js"],
@@ -27,19 +27,6 @@ export default [
       "object-curly-spacing": ["error", "always"],
       "arrow-spacing": ["error", { before: true, after: true }],
       "no-console": "off",
-    },
-  },
-  {
-    files: ["frontend/**/*.{js,jsx}"],
-    languageOptions: {
-      sourceType: "module",
-      globals: { ...globals.browser },
-      ecmaVersion: "latest",
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
     },
   },
 ];

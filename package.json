@@ -12,7 +12,8 @@
     "test": "node --test tests/phonebookUtils.test.js",
     "build:ui": "cd frontend && npm run build",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
-    "lint": "eslint ."
+    "lint": "npm run lint:backend",
+    "lint:backend": "eslint ."
   },
   "dependencies": {
     "dotenv": "^17.2.3",

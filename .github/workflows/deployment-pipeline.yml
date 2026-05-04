@@ -21,7 +21,7 @@ jobs:
       - name: Install frontend dependencies
         run: npm --prefix frontend install
       - name: Check backend style
-        run: npm run lint
+        run: npm run lint:backend
       - name: Check frontend style
         run: npm --prefix frontend run lint
       - name: Run npm test
