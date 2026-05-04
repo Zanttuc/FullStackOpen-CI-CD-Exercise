@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "axios": "^1.13.1",
+    "phonebook_backend": "file:..",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
