@@ -11,6 +11,7 @@
     "dev": "node --watch index.js",
     "test": "node --test tests/phonebookUtils.test.js",
     "build": "npm run build:ui",
+    "start-prod": "node index.js",
     "build:ui": "cd frontend && npm run build",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "lint": "npm run lint:backend",
