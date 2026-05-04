@@ -1,0 +1,1 @@
+GET https://fullstackopen-ck50.onrender.com/api/persons

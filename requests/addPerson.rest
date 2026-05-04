@@ -1,0 +1,7 @@
+POST https://fullstackopen-ck50.onrender.com/api/persons
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "number": "123-45-6789"
+}
